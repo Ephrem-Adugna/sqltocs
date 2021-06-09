@@ -1,0 +1,30 @@
+html {
+    background-color: #10141e;
+    overflow-y: hidden;
+}
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text{
+    height: 90vh;
+    background-color: #10141e;
+    width: 70vh;
+    color: white;
+
+}
+.cs{
+    float: right;
+}
+.btn-conv{
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-conv:hover{
+    cursor:pointer;
+}
