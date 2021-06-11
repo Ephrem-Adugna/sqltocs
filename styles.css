@@ -1,29 +1,53 @@
 html {
     background-color: #10141e;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 * {
     font-family: 'Courier New', Courier, monospace;
 }
-
+select{
+    display: block;
+}
 .text{
-    height: 90vh;
-    background-color: #10141e;
-    width: 70vh;
-    color: white;
+    resize: none
+}
+@media (min-width: 755px) {
+   .text {
+       height: 90vh;
+       background-color: #10141e;
+       width: 45%;
+       color: white;
 
+   }
+   .btn-conv {
+       height: 50px;
+       width: 100px;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+   }
+}
+@media (max-width: 755px) {
+    .text {
+        height: 90vh;
+        background-color: #10141e;
+        width: 100%;
+        color: white;
+
+    }
+     .btn-conv {
+         height: 50px;
+         width: 100px;
+         position: relative;
+                  left: 50%;
+         transform: translateX( -50%);
+     }
 }
 .cs{
     float: right;
 }
-.btn-conv{
-    height: 50px;
-    width: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 
 .btn-conv:hover{
     cursor:pointer;
